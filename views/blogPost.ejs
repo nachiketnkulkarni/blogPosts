@@ -1,0 +1,10 @@
+<% blogPostArray.forEach(element => { %>
+<h2><%= element.title %></h2>
+<p>
+  <span class="truncate"><%= element.desc %></span>
+  <% var n = element.desc.length; if ( n > 100) { %>
+
+  <a href="#">Read more</a>
+  <% } %>
+</p>
+<% }) %>

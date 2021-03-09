@@ -1,0 +1,23 @@
+<%- include("header") %>
+<main class="flex-shrink-0">
+  <div class="container">
+    <div>
+      <h1 style="text-align: center">This is my blog</h1>
+      <p class="lead">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non
+        turpis quam. Interdum et malesuada fames ac ante ipsum primis in
+        faucibus. In finibus, metus sit amet viverra bibendum, augue nisi mollis
+        odio, id mollis enim nulla sit amet felis. Donec bibendum odio velit,
+        eget porttitor libero accumsan et. Aenean neque erat, eleifend eget sem
+        vel, laoreet pulvinar nunc. Vivamus in nunc aliquet, aliquam leo nec,
+        ornare enim. Suspendisse potenti. Suspendisse finibus consectetur augue,
+        hendrerit vulputate diam finibus vel. Proin non quam turpis. Quisque
+        quam dolor, tempor et metus sed, egestas tristique quam. Nulla vel metus
+        lacus.
+      </p>
+    </div>
+    <div><%- include("blogPost",{blogPostArray: blogPostArray}) %></div>
+  </div>
+</main>
+
+<%- include("footer") %>
