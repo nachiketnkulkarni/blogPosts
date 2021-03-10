@@ -10,6 +10,14 @@ main > .container {
   padding: 60px 15px 0;
 } */
 
+body {
+  background-color: #eaf6f6;
+}
+
+.navbar {
+  background-color: #66bfbf !important;
+}
+
 .nav-link {
   padding-left: 25px !important;
   padding-right: 25px !important;
@@ -34,6 +42,15 @@ main > .container {
   display: inline-block;
   vertical-align: top;
   margin-top: -1px;
+}
+
+.addPost {
+  text-align: center;
+}
+
+.form {
+  text-align: left;
+  padding: 50px;
 }
 
 @media (min-width: 768px) {

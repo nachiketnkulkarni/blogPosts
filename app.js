@@ -36,6 +36,18 @@ app.get("/add", (req, res) => {
   res.render("addPost");
 });
 
+app.post("/add", (req, res) => {
+  const title = req.body.title;
+  const desc = req.body.description;
+
+  const newPost = {
+    title: title,
+    desc: desc,
+  };
+  blogPostArray.push(newPost);
+  res.redirect("/");
+});
+
 app.listen("3000", () => {
   console.log("Server started on port 3000");
 });
